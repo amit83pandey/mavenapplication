@@ -122,5 +122,14 @@ if(fname !=null) {
          <input type = "submit" value = "Upload File" />
       </form>	
 	</div>
+	<div>
+		<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+		<df-messenger
+		  intent="WELCOME"
+		  chat-title="BeatBlip"
+		  agent-id="0d9f49b7-a578-41bd-8b14-9a2f33d24bdd"
+		  language-code="en"
+		></df-messenger>
+	</div>
 </body>
 </html>
