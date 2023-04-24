@@ -40,7 +40,7 @@ steps:
 #    destinationFolder: C:\Users\VssAdministrator
 
 #Step3
-- script: dir C:\Users\
+- script: dir C:\Users\Public\
 #- script: type C:\Users\VssAdministrator\HuLoop-Log\huloop-gui.log
 #  displayName: 'Download configuration file'
 
