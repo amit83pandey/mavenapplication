@@ -49,7 +49,7 @@ steps:
 #- script: curl -o chromedriver.exe https://demo.huloop.ai/HuLoopSubscriptionUI/chromedriver.exe 
 #  displayName: 'Download chrome exe'
 
-Step5
+#Step5
 - script: D:\a\1\s\HuLoopConsoleCiCd\huloop\huloop.exe -open "D:\a\1\s\HuLoopConsoleCiCd\HuLoop.txt"
   displayName: 'Run HuLoop'
 
