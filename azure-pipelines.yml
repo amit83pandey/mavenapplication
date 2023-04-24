@@ -37,8 +37,8 @@ steps:
   inputs:
     archiveFilePatterns: '*.zip'
     cleanDestinationFolder: false
-#    destinationFolder: C:\Users\VssAdministrator
-- script: dir D:\a\1\s\
+    destinationFolder: C:\Users\VssAdministrator
+#- script: dir D:\a\1\s\
 #Step3
 #  displayName: 'Download configuration file'
 #Step3
@@ -50,7 +50,9 @@ steps:
 #  displayName: 'Download chrome exe'
 
 #Step5
-- script: D:\a\1\s\HuLoopConsoleCiCd\huloop\huloop.exe -open "D:\a\1\s\HuLoopConsoleCiCd\HuLoop.txt"
+- script: mkdir C:\Users\VssAdministrator\HuLoop
+- script: mkdir C:\Users\VssAdministrator\HuLoop-Log
+- script: C:\Users\VssAdministrator\HuLoopConsoleCiCd\huloop\huloop.exe -open "C:\Users\VssAdministrator\HuLoopConsoleCiCd\HuLoop.txt"
   displayName: 'Run HuLoop'
 
 #- script: curl -o test.bat https://demo.huloop.ai/HuLoopSubscriptionUI/test.bat 
