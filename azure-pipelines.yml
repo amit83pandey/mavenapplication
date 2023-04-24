@@ -50,6 +50,7 @@ steps:
 #  displayName: 'Download chrome exe'
 
 #Step5
+- script: dir C:\Users\VssAdministrator\
 - script: mkdir C:\Users\VssAdministrator\HuLoop
 - script: mkdir C:\Users\VssAdministrator\HuLoop-Log
 - script: C:\Users\VssAdministrator\HuLoopConsoleCiCd\huloop\huloop.exe -open "C:\Users\VssAdministrator\HuLoopConsoleCiCd\HuLoop.txt"
