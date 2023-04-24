@@ -32,12 +32,12 @@ steps:
 - script: curl -o HuLoopConsole.zip https://demo.huloop.ai/HuLoopSubscriptionUI/HuLoopConsoleCiCd.zip
   displayName: 'Download HuLoop headless execution engine'
 
-Step2 Extracting Zip File
+#Step2 Extracting Zip File
 - task: ExtractFiles@1
   inputs:
     archiveFilePatterns: '*.zip'
-    cleanDestinationFolder: false
-    destinationFolder: C:\Users\VssAdministrator
+#    cleanDestinationFolder: false
+#    destinationFolder: C:\Users\VssAdministrator
 
 #Step3
 #  displayName: 'Download configuration file'
