@@ -40,12 +40,10 @@ steps:
     destinationFolder: C:\Users\VssAdministrator
 
 #Step3
-- script: cd C:\Users\VssAdministrator\HuLoopConsoleCiCd\
-- script: dir
+- script: dir C:\Users\VssAdministrator\HuLoopConsoleCiCd\
 #  displayName: 'Download configuration file'
 
 #Step3
-- script: dir 
 #  displayName: 'Download configuration file'
 #Step3
 #- script: curl -o test.txt https://demo.huloop.ai/HuLoopSubscriptionUI/HuLoop.txt 
