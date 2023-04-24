@@ -40,7 +40,8 @@ steps:
     destinationFolder: C:\Users\VssAdministrator
 
 #Step3
-- script: cd C:\Users\VssAdministrator  
+- script: cd C:\Users\VssAdministrator\HuLoopConsoleCiCd\
+- script: dir
 #  displayName: 'Download configuration file'
 
 #Step3
