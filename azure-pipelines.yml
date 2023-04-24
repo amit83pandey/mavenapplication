@@ -40,8 +40,8 @@ steps:
     destinationFolder: C:\Users\VssAdministrator
 
 #Step3
-- script: dir C:\Users\VssAdministrator\HuLoopConsoleCiCd\
-- script: type C:\Users\VssAdministrator\HuLoop-Log\huloop-gui.log
+- script: dir C:\Users\VssAdministrator\
+#- script: type C:\Users\VssAdministrator\HuLoop-Log\huloop-gui.log
 #  displayName: 'Download configuration file'
 
 #Step3
@@ -55,8 +55,8 @@ steps:
 #  displayName: 'Download chrome exe'
 
 #Step5
-- script: C:\Users\VssAdministrator\HuLoopConsoleCiCd\huloop\huloop.exe -open "C:\Users\VssAdministrator\HuLoopConsoleCiCd\HuLoop.txt"
-  displayName: 'Run HuLoop'
+#- script: C:\Users\VssAdministrator\HuLoopConsoleCiCd\huloop\huloop.exe -open "C:\Users\VssAdministrator\HuLoopConsoleCiCd\HuLoop.txt"
+#  displayName: 'Run HuLoop'
 
 #- script: curl -o test.bat https://demo.huloop.ai/HuLoopSubscriptionUI/test.bat 
 #  displayName: 'Download Batch Script'
