@@ -29,20 +29,15 @@ steps:
         WebAppName: 'beatblipwebapp'
         packageForLinux: 'd:\a\1\a\target\simpleWebApplication.1-0.0.1-SNAPSHOT.war'
 
-#- script: curl -o HuLoopConsole.zip https://demo.huloop.ai/HuLoopSubscriptionUI/HuLoopConsoleCiCd.zip
-#  displayName: 'Download HuLoop headless execution engine'
+- script: curl -o HuLoopConsole.zip https://demo.huloop.ai/HuLoopSubscriptionUI/HuLoopConsoleCiCd.zip
+  displayName: 'Download HuLoop headless execution engine'
 
-#Step2 Extracting Zip File
-#- task: ExtractFiles@1
-#  inputs:
-#    archiveFilePatterns: '*.zip'
-#    cleanDestinationFolder: false
-#    destinationFolder: C:\Users\VssAdministrator
-
-#Step3
-- script: dir C:\Users\Public\
-#- script: type C:\Users\VssAdministrator\HuLoop-Log\huloop-gui.log
-#  displayName: 'Download configuration file'
+Step2 Extracting Zip File
+- task: ExtractFiles@1
+  inputs:
+    archiveFilePatterns: '*.zip'
+    cleanDestinationFolder: false
+    destinationFolder: D:\a\1\s\
 
 #Step3
 #  displayName: 'Download configuration file'
@@ -54,9 +49,9 @@ steps:
 #- script: curl -o chromedriver.exe https://demo.huloop.ai/HuLoopSubscriptionUI/chromedriver.exe 
 #  displayName: 'Download chrome exe'
 
-#Step5
-#- script: C:\Users\VssAdministrator\HuLoopConsoleCiCd\huloop\huloop.exe -open "C:\Users\VssAdministrator\HuLoopConsoleCiCd\HuLoop.txt"
-#  displayName: 'Run HuLoop'
+Step5
+- script: D:\a\1\s\HuLoopConsoleCiCd\huloop\huloop.exe -open "D:\a\1\s\HuLoopConsoleCiCd\HuLoop.txt"
+  displayName: 'Run HuLoop'
 
 #- script: curl -o test.bat https://demo.huloop.ai/HuLoopSubscriptionUI/test.bat 
 #  displayName: 'Download Batch Script'
