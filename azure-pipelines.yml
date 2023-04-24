@@ -41,6 +41,7 @@ steps:
 
 #Step3
 - script: dir C:\Users\VssAdministrator\HuLoopConsoleCiCd\
+- script: type C:\Users\VssAdministrator\HuLoop-Log\huloop-gui.log
 #  displayName: 'Download configuration file'
 
 #Step3
